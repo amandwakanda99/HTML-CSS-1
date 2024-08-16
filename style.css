@@ -1,0 +1,165 @@
+@charset "UTF-8";
+*{height: 100;}
+
+@font-face {
+  font-family: 'Bold-Font';
+  src: url('Fontes/the_bold_font/BF.otf') format('opentype'); /* Substitua .otf pela extensão correta */
+}
+:root{
+  --cor1: #594434;
+  --cor2: #7D5738;
+  --cor3: #A87751;
+  --cor4: #D4B398;
+  --cor5: #EADBCE;
+  --fonte_bold: 'Bold-Font', Sans-Serif;
+  --fontespecial: "Anton", Arial, Helvetica, Sans-serif;
+  --fontepadrao: Arial, Helvetica, Sans-serif;
+  --fontsizepadrao: 20px
+}
+* {margin: 0px; padding: 0px;
+
+}
+  body{
+    background-color: var(--cor3);
+    font-family: var(--fontepadrao);
+    font-size: 20px;
+    text-align: justify;
+    margin: 0px;}
+
+    a:hover{
+      text-decoration: underline;
+    }
+
+    header{
+      background-color: black;
+      height: 70px;
+      margin: 0px;
+    }
+ 
+    h1#cabeçalho {
+      display: inline-block;
+      color: var(--cor4); font-family: var(--fonte_bold); font-size: 33px;
+      font-weight: 400;
+      font-style: normal;
+      width: 400px;
+      height: 60px;
+      margin: 10px 0px 0px 50px;
+    }
+    .numero_de_telefone {font-family: var(--fonte_bold); font-size: 33px;
+      font-weight: 400;
+      display: inline-block;
+      color: var(--cor4);
+      font-style: normal;
+      text-align: right;
+      width: 170px;
+      height: 60px;
+      margin: 10px 0px 0px 0px;
+    }
+    .numero_de_telefone a {
+      color: var(--cor4);
+      text-decoration: none; /* Remove o sublinhado padrão */
+    }
+    
+    .numero_de_telefone a:hover {
+      text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
+    }
+
+    hr{
+      margin: 0px; border: 10px;
+      color: #312a26;
+    }
+   
+    .texto {
+      text-align: left;
+
+    }
+    h1#titulo_principal {
+      color: #000000; font-family:var(--fonte_bold); font-size: calc(5rem + 3vw);
+      font-weight: 400;
+      font-style: normal; 
+      max-width: 450px;
+      padding: 50px 50px 10px 50px;
+      line-height: 115px;
+    }
+
+    p#paragrafo_principal {
+      color: var(--cor1);
+      margin-top: 10px; margin-left: 50px;
+      max-width: 450px;} 
+      
+    div#saibamais{
+      color: rgb(0, 0, 0);
+      background-color: var(--cor5);
+      width: 150px;
+      height: 60px;
+      border-radius: 10px;
+      text-align: center; 
+      margin-top: 10px; margin-left: 50px; margin-bottom: 10px;
+    }
+
+    #saibamais > a {
+      display: inline-block;
+      width: 150px;
+      height: 60px;;
+      font-family: var(--fontepadrao);
+      color: #000000;
+      text-decoration: none;
+    }
+    #saibamais > a:hover{
+      text-decoration: underline;
+    }
+    .imagem-container {
+      width: 50%; /* Ajuste o tamanho conforme necessário */
+
+      height: auto;
+      float: right;
+    } 
+    .imagem-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Mantém a proporção da imagem e preenche todo o container */
+    }
+
+    .logo{
+      margin-left: 50px;
+    }
+
+    section.nosso_serviço {
+      background-color: rgba(20, 20, 20, 0.8) color: var(--cor5);
+      background-image: url('Images/tl.jpg'); background-repeat:no-repeat;
+    }
+
+    article.nosso_serviço {
+      display: inline-block;
+      background-color: rgba(0, 0, 0, 0.046); 
+      width: 250px;
+      height: 200px;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 10px; margin-left: 50px; margin-bottom: 10px;
+    }
+   div.call_to_action {
+      display: inline-block;
+      color: var(--cor5); font-size: 20px;
+      background-color: rgba(0, 0, 0, 0.047); 
+      width: 200px;
+      height: 50px;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 10px; margin-left: 50px; margin-bottom: 10px;
+    }
+    
+    .titulopreto{
+      font-family: var(--fontespecial); color:var(--cor5); font-size: 32px;
+      font-weight: 300;
+      font-style: normal; 
+      padding: 50px; margin: 0px;
+    }
+
+    h3.subtitulos{
+      color:var(--cor5); font-size: 16px;
+
+    }
+    p.paragrafos{
+      color: var(--cor5); font-size: 12px;
+    }
